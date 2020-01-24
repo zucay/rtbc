@@ -30,5 +30,6 @@ def download_from_url(url, download_path)
 end
 
 if __FILE__ == $0
+  fail 'リストファイルを指定してください' unless ARGV[0]
   download_from_file(ARGV[0])
 end
